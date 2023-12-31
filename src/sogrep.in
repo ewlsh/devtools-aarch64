@@ -17,7 +17,10 @@ source "${_DEVTOOLS_LIBRARY_DIR}"/lib/valid-repos.sh
 fallback_mirror='https://geo.mirror.pkgbuild.com'
 : ${SOCACHE_DIR:="${XDG_CACHE_HOME:-${HOME}/.cache}/sogrep"}
 
-arches=('x86_64')
+arches=(
+    'x86_64'
+    'aarch64'
+)
 
 # options
 REFRESH=0

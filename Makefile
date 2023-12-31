@@ -35,19 +35,26 @@ COMMITPKG_LINKS = \
 ARCHBUILD_LINKS = \
 	core-testing-x86_64-build \
 	core-testing-x86_64_v3-build \
+	core-testing-aarch64-build \
 	core-staging-x86_64-build \
 	core-staging-x86_64_v3-build \
+	core-staging-aarch64-build \
 	extra-x86_64-build \
 	extra-x86_64_v3-build \
+	extra-aarch64-build \
 	extra-testing-x86_64-build \
 	extra-testing-x86_64_v3-build \
+	extra-testing-aarch64-build \
 	extra-staging-x86_64-build \
 	extra-staging-x86_64_v3-build \
+	extra-staging-aarch64-build \
 	multilib-build \
 	multilib-testing-build \
 	multilib-staging-build \
 	kde-unstable-x86_64-build \
-	gnome-unstable-x86_64-build
+	kde-unstable-aarch64-build \
+	gnome-unstable-x86_64-build \
+	gnome-unstable-aarch64-build
 
 COMPLETIONS = $(addprefix $(BUILDDIR)/,$(patsubst %.in,%,$(wildcard contrib/completion/*/*)))
 
