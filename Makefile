@@ -175,7 +175,7 @@ tag:
 release: dist
 	git push --tags origin master
 	git cliff --version >/dev/null
-	GITLAB_HOST=gitlab.archlinux.org glab release create v$(V) devtools-$(V).tar.gz* --milestone v$(V) --notes-file <(git cliff --strip=all --latest)
+	gh release create v$(V) devtools-$(V).tar.gz* --title v$(V) --notes-file <(git cliff --strip=all --latest)
 
 dist:
 	git archive --format=tar --prefix=devtools-$(V)/ v$(V) | gzip > devtools-$(V).tar.gz
